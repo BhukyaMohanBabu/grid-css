@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-CSS</title>
+    <style>
+        .item{
+            border:1px solid black;
+            width:100vw;
+            height:100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3,400px);
+            grid-template-rows: repeat(3,190px);
+            justify-content: center;
+            align-content: center;
+            padding: 10px;
+            gap:10px;
+
+        }
+        .items{
+            border:2px solid black;
+        }
+        .item1{
+            display: grid;
+            grid-template-columns: repeat(3,126px);
+            gap:5px;
+            padding:5px;
+                                                        
+        }
+        
+        .item1a{
+           border:1px solid green;
+          
+        }
+        .item11{
+            background-color:red;
+        }
+        .item12{
+            background-color:orangered;
+        }
+        .item13{
+            background-color: orange;
+        }
+        .item14{
+            background-color:aquamarine;
+        }
+        .item15{
+            background-color:aquamarine;
+        }
+        .item16{
+            background-color:aquamarine;
+        }
+        .item2{
+             display: grid;
+             grid-template-columns:repeat(3,125px);
+             padding:5px;
+             grid-template-rows: repeat(2,85px);
+             gap:5px
+        }
+        .itemsb{
+             border:1px solid black;
+
+        }
+        .items2a{
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 3 ;
+        }
+        .items2b{
+            background-color: orangered;
+            grid-column-start:3;
+            grid-row: 1/3;
+
+        }
+        .items2c{
+        background-color: orange;
+        }
+        .items2d{
+            background-color: aquamarine;
+        }
+        .item3{
+            display:grid;
+            grid-template-columns: repeat(3,130px);
+            grid-template-rows: repeat(2,60px);
+            padding: 5px;
+        }
+        .itemsc{
+           border:1px solid black;
+        }
+        .item3a{
+            background-color: orangered;
+            grid-column-start: 1;
+            grid-column-end:4;
+            
+            
+            
+        }
+        .item3b{
+            background-color: orange;
+        }
+        .item3c{
+            background-color: aquamarine;
+            grid-column-start: 2;
+           grid-column-end: 4;
+        }
+        .item3d{
+            background-color: red;
+            grid-column: 1/4;
+        }
+        .item4{
+            display:grid;
+            padding:5px;
+            grid-template-columns: repeat(2,100px);
+            grid-template-rows: repeat(3,59px);
+        }
+        .item5{
+            display:grid;
+           grid-template-columns: repeat(6,60px);
+           padding:5px;
+           gap:2px
+        }
+        .iteme{
+            border:1px solid black;
+        }
+        .item51{
+            background-color: aquamarine;
+        }
+        .item52{
+            background-color:orange;
+        }
+        .item53{
+            background-color: aquamarine;
+        }
+        .item54{
+            background-color: orange;
+        }
+        .item55{
+            background-color:aquamarine;
+        }
+        .item56{
+            background-color:orange;
+        }
+        .item57{
+            background-color:orange;
+        }
+        .item58{
+            background-color: red;
+        }
+        .item59{
+            background-color: orange;
+        }
+        .item510{
+            background-color: red;
+        }
+        .item511{
+            background-color:orange;
+        }
+        .item512{
+            background-color:red;
+        }
+        .item513{
+            background-color:aquamarine;
+        }
+        .item514{
+            background-color: orange;
+        }
+        .item515{
+            background-color:aquamarine;
+        }
+        .item516{
+            background-color:orange;
+        }
+        .item517{
+            background-color: aquamarine;
+        }
+        .item518{
+            background-color:orange;
+        }
+        .item8{
+            display:grid;
+            grid-template-columns: repeat(5,70px);
+            grid-template-rows:repeat(3,70px);
+            padding:5px;
+        }
+        .itemf{
+            border:1px solid black;
+        }
+        .class81{
+            background-color: orangered;
+        }
+        .class82{
+            background-color: orangered;
+        }
+        .class83{
+            background-color: orangered;
+        }
+        .class84{
+            background-color: orangered;
+        }
+        .class85{
+            background-color: orangered;
+        }
+        .class86{
+            background-color: orangered;
+            height:40px;
+        }
+        .class87{
+            background-color: orangered;
+            height:40px;
+            
+        }
+        .class88{
+            background-color: orangered;
+            grid-column-start:3;
+            grid-column-end: 6;
+            height:40px
+        }
+        .class89{
+            background-color: orangered;
+            grid-column-start:1;
+            grid-column-end: 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">
+        <div class="items item1 "> 
+            <div class="item1a item11"></div>
+            <div class="item1a item12"></div>
+            <div class="item1a item13"></div>
+            <div class="item1a item14"></div>
+            <div class="item1a item15"></div>
+            <div class="item1a item16"></div>
+        </div>
+        <div class="items item2">
+            <div class="itemsb items2a"></div>
+            <div class="itemsb items2b"></div>
+            <div class="itemsb items2c"></div>
+            <div class="itemsb items2d"></div>
+        </div>
+        <div class="items item3">
+            <div class="itemsc item3a"></div>
+            <div  class="itemsc item3b"></div>
+            <div  class="itemsc item3c"></div>
+            <div  class="itemsc item3d"></div>
+        </div>
+        <div class="items item4">
+            <div class="itemd item4a"></div>
+            <div class="itemd item4b"></div>
+            <div class="itemd item4c"></div>
+            <div class="itemd item4d"></div>
+            <div class="itemd item4e"></div>
+        </div>
+        <div class="items item5">
+            <div class="iteme item51"></div>
+            <div class="iteme item52"></div>
+            <div class="iteme item53"></div>
+            <div class="iteme item54"></div>
+            <div class="iteme item55"></div>
+            <div class="iteme item56"></div>
+            <div class="iteme item57"></div>
+            <div class="iteme item58"></div>
+            <div class="iteme item59"></div>
+            <div class="iteme item510"></div>
+            <div class="iteme item511"></div>
+            <div class="iteme item512"></div>
+            <div class="iteme item513"></div>
+            <div class="iteme item514"></div>
+            <div class="iteme item515"></div>
+            <div class="iteme item516"></div>
+            <div class="iteme item517"></div>
+            <div class="iteme item518"></div>
+        </div>
+        <div class="items item6"></div>
+        <div class="items item7"></div>
+        <div class="items item8">
+            <div class="itemf class81"></div>
+            <div class="itemf class82"></div>
+            <div class="itemf class83"></div>
+            <div class="itemf class84" ></div>
+            <div class="itemf class85"></div>
+            <div class="itemf class86"></div>
+            <div class="itemf class87"></div>
+            <div class="itemf class88"></div>
+            <div class="itemf class89"></div>
+        </div>
+        <div class="items item9"> </div>
+    </div>
+    
+    
+</body>
+</html>
