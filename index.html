@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -111,18 +112,46 @@
         }
         .item4{
             display:grid;
-            padding:5px;
-            grid-template-columns: repeat(2,100px);
-            grid-template-rows: repeat(3,59px);
+            padding:1px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            
+            gap:2px;
+        }
+        .itemd{
+            border:2px solid black; 
+
+              }
+        .item4a{
+             background-color: aquamarine;
+             
+        }
+        .item4b{
+            background-color:orangered;
+            height:60px
+        }
+        .item4c{
+            background-color:orange;
+        }
+        .item4d{
+            background-color:red;
+            height:80px;
+        }
+        .item4e{
+            background-color:aquamarine;
+            grid-column:1/3;
+    
         }
         .item5{
-            display:grid;
-           grid-template-columns: repeat(6,60px);
+        display:grid;
+           grid-template-columns: repeat(6,1fr);
            padding:5px;
-           gap:2px
+           gap:2px;
+           background-color:black;
+           gap:5px
         }
-        .iteme{
-            border:1px solid black;
+        .item5a{
+            width:200px;
         }
         .item51{
             background-color: aquamarine;
@@ -180,45 +209,147 @@
         }
         .item8{
             display:grid;
-            grid-template-columns: repeat(5,70px);
-            grid-template-rows:repeat(3,70px);
+            grid-template-columns: repeat(5,73.5px);
+            grid-template-rows:repeat(3,56px);
             padding:5px;
+            gap:5px;
+            background-color: black;
+        }
+        .item6{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            background-color: black;
+        }
+        .item6a{
+           grid-column: 1/3;
+           background-color: orange;
+        }
+        .item6b{
+            background-color: orangered;
+        }
+        .item6c{
+            grid-row-start: 3;
+            grid-column:1/3;
+            background-color: aquamarine;
+        }
+        .item6d{
+           background-color: aquamarine;
+        }
+        .item6e{
+         background-color: orangered;   
+        }
+        .item6f{
+             background-color: red;
+
+            }
+        .item6g{
+             background-color:orange;
+        }
+        .item6o{
+            background-color: aquamarine;
+            grid-column: 1/5;
+        }
+        .item6i{
+          background-color: cadetblue;
+        }
+        .item6j{
+            background-color: red;
+        }
+        .item6k{
+            background-color: orange;
+        }
+        .item6l{
+            background-color: red;
+        }
+        .item6m{
+            background-color:orange;
+        }
+        .item6n{
+            background-color: ;
+        }
+        .item7{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,1fr);
+        }
+        .itemm{
+            border:2px solid black;
+        }
+        .item7a{
+            background-color: green;
+            height:60px
+            
+        }
+        .item7b{
+            background-color: orange;
+        }
+        .item7c{
+            background-color: red;
+            height:120px;
+
+
+        }
+        .item7d{
+            background-color:aquamarine;
+            
+        }
+
+        .sub{
+            border:2px solid black;
+            display:grid;
+            height:100%;
+            border:2px solid black;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr)
+        }
+        .sub1{
+            border:1ps solid black;
+            background-color: yellowgreen;
+            grid-row-start: 1;
+            grid-column: 1/3;
+        }
+        .sub2{
+            background-color: green;
+        }
+        .sub3{
+            background-color: blueviolet;
+           
+            
+            
         }
         .itemf{
-            border:1px solid black;
+            border:2px solid black;
         }
         .class81{
-            background-color: orangered;
+            background-color:orangered
         }
         .class82{
-            background-color: orangered;
+            background-color: orange;
         }
         .class83{
-            background-color: orangered;
+            background-color:aquamarine;
         }
         .class84{
             background-color: orangered;
         }
         .class85{
-            background-color: orangered;
+            background-color: orange;
         }
         .class86{
             background-color: orangered;
-            height:40px;
         }
         .class87{
-            background-color: orangered;
-            height:40px;
+            background-color:red;
             
         }
         .class88{
-            background-color: orangered;
+            background-color: antiquewhite;
             grid-column-start:3;
             grid-column-end: 6;
-            height:40px
         }
         .class89{
-            background-color: orangered;
+            background-color: aquamarine;
             grid-column-start:1;
             grid-column-end: 6;
         }
@@ -273,8 +404,35 @@
             <div class="iteme item517"></div>
             <div class="iteme item518"></div>
         </div>
-        <div class="items item6"></div>
-        <div class="items item7"></div>
+        <div class="items item6">
+            <div class="itemf item6a"></div>
+            <div class="itemf item6b"></div>
+            <div class="itemf item6c"></div>
+            <div class="itemf item6d"></div>
+            <div class="itemf item6e"></div>
+            <div class="itemf item6f"></div>
+            <div class="itemf item6g"></div>
+            <div class="itemf item6h"></div>
+            <div class="itemf item6i"></div>
+            <div class="itemf item6j"></div>
+            <div class="itemf item6k"></div>
+            <div class="itemf item6l"></div>
+            <div class="itemf item6m"></div>
+            <div class="itemf item6n"></div>
+            <div class="itemf item6o"></div>
+        </div>
+        <div class="items item7">
+            <div class="itemm item7a"></div>
+            <div class="itemm item7b"></div>
+            <div class="itemm item7c"></div>
+            <div class="itemm item7d">
+                <div class="sub">
+                    <div class="sub1"></div>
+                    <div class="sub2 "></div>
+                    <div class="sub3"></div>
+                </div>
+            </div>
+        </div>
         <div class="items item8">
             <div class="itemf class81"></div>
             <div class="itemf class82"></div>
@@ -286,7 +444,13 @@
             <div class="itemf class88"></div>
             <div class="itemf class89"></div>
         </div>
-        <div class="items item9"> </div>
+        <div class="items item9">
+            <div class="itemg item9a"></div>
+            <div class="itemg item9a"></div>
+            <div class="itemg item9a"></div>
+            <div class="itemg item9a"></div>
+            <div class="itemg item9a"></div>
+        </div>
     </div>
     
     
